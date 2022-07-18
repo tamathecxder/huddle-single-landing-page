@@ -19,13 +19,28 @@
 }
 
 body {
-
+  font-family: var(--poppins);
+  background-color: var(--violet);
 }
 
 .container {
   width: 1440px;
   height: 100vh;
-  padding: 0 80px;
+  overflow: hidden;
   margin: auto;
+  position: relative;
 }
 
+.bg-image {
+  padding: 40px 80px;
+  height: 100%;
+  background-image: url('../img/bg-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 30%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
