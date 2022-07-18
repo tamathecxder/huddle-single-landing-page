@@ -21,6 +21,7 @@
 body {
   font-family: var(--poppins);
   background-color: var(--violet);
+  overflow: hidden;
 }
 
 .container {
@@ -29,10 +30,12 @@ body {
   overflow: hidden;
   margin: auto;
   position: relative;
+  /* background-color: lightpink; */
 }
 
 .bg-image {
-  padding: 40px 80px;
+  padding: 30px 80px;
+  width: auto;
   height: 100%;
   background-image: url('../img/bg-desktop.svg');
   background-repeat: no-repeat;
@@ -45,60 +48,65 @@ body {
   bottom: 0;
 }
 
-main {
+.bg-image main {
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  /* background-color: yellowgreen; */
+  overflow: hidden;
 }
 
-main .image-content {
+.bg-image main .image-content {
   width: 50%;
   height: 100%;
+  padding-top: 50px;
   /* background-color: aqua; */
-  margin: 50px 0 0 0;
 }
 
-main .image-content img {
+.bg-image main .image-content img {
+  width: 620px;
+  height: auto;
   object-fit: cover;
-  width: 700px;
 }
 
-main .text-content {
-  /* background-color: coral; */
+.bg-image main .text-content {
+  width: 50%;
   height: 100%;
   max-width: 600px;
   color: #fff;
-  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: flex-start;
   gap: 20px;
-  padding-top: 60px;
+  padding: 0 40px;
+  padding-top: 80px;
+  /* background-color: coral; */
 }
 
-main .text-content h2 {
+.bg-image main .text-content h2 {
   font-size: 34px;
   max-width: 420px;
 }
 
-main .text-content p {
+.bg-image main .text-content p {
   max-width: 460px;
   font-family: var(--open-sans);
   font-size: 16px;
   line-height: 26px;
 }
 
-main .text-content .btn-register {
+.bg-image main .text-content .btn-register {
   width: 40%;
   padding: 12px;
   border-radius: 50px;
   color: var(--violet);
   font-family: var(--poppins);
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 6px;
   box-shadow: 6px 10px 14px 0px rgba(0, 0, 0, 0.3);
   border: none;
@@ -106,9 +114,42 @@ main .text-content .btn-register {
   transition: all 0.2s ease-in-out;
 }
 
-main .text-content .btn-register:hover {
+.bg-image main .text-content .btn-register:hover {
   cursor: pointer;
   color: var(--soft-magenta);
   background-color: #fff;
   transition: all 0.2s ease-in-out;
+}
+
+footer {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 40%;
+  top: 90%;
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
+
+footer .circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: relative;
+}
+
+footer .circle:hover {
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+footer .circle .myicons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #fff;
 }
