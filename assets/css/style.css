@@ -44,3 +44,71 @@ body {
   left: 0;
   bottom: 0;
 }
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+main .image-content {
+  width: 50%;
+  height: 100%;
+  /* background-color: aqua; */
+  margin: 50px 0 0 0;
+}
+
+main .image-content img {
+  object-fit: cover;
+  width: 700px;
+}
+
+main .text-content {
+  /* background-color: coral; */
+  height: 100%;
+  max-width: 600px;
+  color: #fff;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 20px;
+  padding-top: 60px;
+}
+
+main .text-content h2 {
+  font-size: 34px;
+  max-width: 420px;
+}
+
+main .text-content p {
+  max-width: 460px;
+  font-family: var(--open-sans);
+  font-size: 16px;
+  line-height: 26px;
+}
+
+main .text-content .btn-register {
+  width: 40%;
+  padding: 12px;
+  border-radius: 50px;
+  color: var(--violet);
+  font-family: var(--poppins);
+  font-size: 20px;
+  margin-top: 6px;
+  box-shadow: 6px 10px 14px 0px rgba(0, 0, 0, 0.3);
+  border: none;
+  background-color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+main .text-content .btn-register:hover {
+  cursor: pointer;
+  color: var(--soft-magenta);
+  background-color: #fff;
+  transition: all 0.2s ease-in-out;
+}
