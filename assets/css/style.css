@@ -1,0 +1,23 @@
+/* Variables */
+:root {
+
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+}
+
+.container {
+  width: 1440px;
+  height: 100vh;
+  padding: 0 80px;
+  margin: auto;
+}
+
