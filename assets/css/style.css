@@ -1,6 +1,14 @@
+/* Custom Fonts: poppins(400, 600), opensans(400) */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
 /* Variables */
 :root {
+  /* Primary */
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
 
+  --poppins: 'Poppins', sans-serif;
+  --open-sans: 'Open Sans', sans-serif;
 }
 
 /* CSS Reset */
