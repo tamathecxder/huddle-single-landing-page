@@ -53,11 +53,12 @@ body {
   height: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   /* background-color: yellowgreen; */
   overflow: hidden;
+  flex: 0 1 100%;
 }
 
 .bg-image main .image-content {
@@ -83,7 +84,7 @@ body {
   justify-content: start;
   align-items: flex-start;
   gap: 20px;
-  padding: 0 40px;
+  padding: 0 60px;
   padding-top: 80px;
   /* background-color: coral; */
 }
@@ -108,7 +109,7 @@ body {
   font-family: var(--poppins);
   font-size: 18px;
   margin-top: 6px;
-  box-shadow: 6px 10px 14px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 6px 6px 14px 0px rgba(0, 0, 0, 0.3);
   border: none;
   background-color: #fff;
   transition: all 0.2s ease-in-out;
@@ -124,7 +125,7 @@ body {
 footer {
   width: 50%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   left: 40%;
   top: 90%;
   display: flex;
@@ -141,7 +142,7 @@ footer .circle {
 }
 
 footer .circle:hover {
-  border: 3px solid rgba(0, 0, 0, 0.1);
+  border: 3px solid rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
